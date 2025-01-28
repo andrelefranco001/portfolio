@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import styled from "styled-components";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const HighlightText = styled.span`
   font-size: 1.7rem;
@@ -32,7 +33,8 @@ function Home() {
           <HighlightText>creative touch.</HighlightText>
         </p>
       </div>
-      <span
+      <Link
+        to="/detail"
         style={{
           backgroundColor: "#D9D9D9",
           borderRadius: "15px",
@@ -57,12 +59,18 @@ function Home() {
             do eiusmod tempor incididunt ut labore.
           </p>
         </span>
-        <span
-          style={{ display: "flex", flexDirection: "row", color: "#8b8b8b" }}
-        >
-          <p>Show more </p>{" "}
-          <HiArrowLongRight style={{ marginLeft: "1rem", marginTop: "2rem" }} />
-        </span>
+        <Link to="/detail" style={{ textDecoration: "none", color: "#8b8b8b" }}>
+          <span
+            style={{ display: "flex", flexDirection: "row", color: "#8b8b8b" }}
+          >
+            {/* <p>Show more </p>{" "} */}
+
+            <p> Show more</p>
+            <HiArrowLongRight
+              style={{ marginLeft: "1rem", marginTop: "2rem" }}
+            />
+          </span>
+        </Link>
       </div>
       <div
         style={{
@@ -257,7 +265,7 @@ function Home() {
           fontSize: "1.5rem",
         }}
       >
-        <p style={{ fontSize: "50px", fontWeight: "600" }}>
+        <p style={{ fontSize: "3.5rem", fontWeight: "600" }}>
           andresvelasquezfranco@gmail.com
         </p>
         <p>LinkedIn</p>

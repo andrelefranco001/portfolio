@@ -3,38 +3,38 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import styled from "styled-components";
+import DetailProject from "./components/DetailProject";
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  /* gap: 16px; */
+  width: 100%;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 
 function App() {
   return (
-    <>
-      <Router>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            width: "auto",
-          }}
-        >
-          <span />
+    <Router>
+      <GridContainer>
+        <span />
+        <Content>
           <NavBar />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "70%",
-              // border: "solid 2px blue",
-            }}
-          >
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-          </div>
-          <span />
-        </div>
-      </Router>
-    </>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/detail" element={<DetailProject />} />
+          </Routes>
+        </Content>
+        <span />
+      </GridContainer>
+    </Router>
   );
 }
 
