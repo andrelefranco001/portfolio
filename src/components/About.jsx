@@ -1,10 +1,11 @@
-import React from "react";
-import rep from "../../public/VOSTOK282982.JPG";
+import React, { useState } from "react";
 
 function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <>
-      <div
+      {/* <div
         style={{
           // border: "red solid 1px",
           marginTop: "20rem",
@@ -17,15 +18,6 @@ function About() {
             flexDirection: "row",
           }}
         >
-          {/* <div
-            style={{
-              backgroundColor: "#D9D9D9",
-              borderRadius: "15px",
-              width: "500px",
-              height: "500px",
-              marginRight: "3rem",
-            }}
-          /> */}
 
           <img
             src="../../public/VOSTOK282982.jpg"
@@ -37,7 +29,50 @@ function About() {
               marginRight: "3rem",
               objectFit: "cover",
             }}
-          />
+          /> */}
+
+      <div style={{ marginTop: "20rem", marginBottom: "5rem" }}>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          {/* Contenedor de la imagen con loader */}
+          <div
+            style={{
+              position: "relative",
+              width: "300px",
+              height: "300px",
+              marginRight: "3rem",
+              borderRadius: "15px",
+              overflow: "hidden",
+            }}
+          >
+            {isLoading && (
+              <div
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "#D9D9D9",
+                }}
+              >
+                <div className="spinner" />
+              </div>
+            )}
+            <img
+              src="../../src/assets/VOSTOK282982.jpg"
+              onLoad={() => setIsLoading(false)}
+              style={{
+                borderRadius: "15px",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: isLoading ? "none" : "block",
+              }}
+            />
+          </div>
+
+          {/* Texto */}
           <div
             style={{
               display: "flex",
@@ -75,7 +110,7 @@ function About() {
               borderRadius: "15px",
               height: "auto",
               marginTop: "3rem",
-              marginRight: "3rem",
+              // marginRight: "3rem",
               padding: "2rem 3rem",
               width: "auto",
             }}
@@ -153,7 +188,7 @@ function About() {
               borderRadius: "15px",
               height: "auto",
               marginTop: "3rem",
-              marginRight: "3rem",
+              // marginRight: "3rem",
               padding: "2rem 3rem",
               width: "auto",
             }}
@@ -222,6 +257,25 @@ function About() {
         <p>LinkedIn</p>
       </span>
       <p>© Andres Velasquez Franco</p>
+
+      {/* Estilos para el spinner */}
+      <style>
+        {`
+          .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgb(255, 255, 255);
+            border-left-color: #f8a100;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+          }
+
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}
+      </style>
     </>
   );
 }

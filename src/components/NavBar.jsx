@@ -23,17 +23,9 @@ function NavBar() {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        fontSize: "1.8rem",
-        fontWeight: "600",
-        boxSizing: "border-box",
         background: "rgb(230, 230, 230)",
         top: 0,
-
-        // top: isVisible ? "0" : "-100px", // Mueve hacia arriba al desaparecer
-        // left: "50%",
-        // transform: "translateX(-50%)",
-        // transition: "top 0.3s ease-in-out", // Animación suave
-        // padding: "1rem",
+        zIndex: 1000,
 
         alignItems: "center",
         fontSize: isScrolled ? "1.2rem" : "1.8rem", // Cambia el tamaño del texto
