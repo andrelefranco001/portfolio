@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 function DetailProject() {
   return (
     <div
@@ -106,14 +106,49 @@ function DetailProject() {
         </div>
         <div
           style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            gap: "20px",
             gridColumn: "span 3 / span 3",
             gridRowStart: "4",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "15px",
+
             height: "20px",
           }}
         >
-          8
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "50%",
+              cursor: "pointer",
+              background: "#D9D9D9",
+              border: "solid 1px #858585",
+              width: "50px",
+              height: "50px",
+              color: "#858585",
+            }}
+          >
+            <FaArrowLeft style={{ fontSize: "18px" }} />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "50%",
+              cursor: "pointer",
+              background: "#D9D9D9",
+              border: "solid 1px #858585",
+              width: "50px",
+              height: "50px",
+              color: "#858585",
+            }}
+          >
+            <FaArrowRight style={{ fontSize: "18px" }} />
+          </div>
         </div>
         <div
           style={{
@@ -123,7 +158,7 @@ function DetailProject() {
             borderRadius: "15px",
           }}
         >
-          9
+          6
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>

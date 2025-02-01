@@ -5,34 +5,15 @@ function About() {
 
   return (
     <>
-      {/* <div
-        style={{
-          // border: "red solid 1px",
-          marginTop: "20rem",
-          marginBottom: "5rem",
-        }}
-      >
+      <div style={{ marginTop: "20rem", marginBottom: "5rem" }}>
         <div
           style={{
             display: "flex",
             flexDirection: "row",
+            width: "70%",
+            justifyContent: "flex-start",
           }}
         >
-
-          <img
-            src="../../public/VOSTOK282982.jpg"
-            // alt="Descripción de la imagen"
-            style={{
-              borderRadius: "15px",
-              width: "300px",
-              height: "300px",
-              marginRight: "3rem",
-              objectFit: "cover",
-            }}
-          /> */}
-
-      <div style={{ marginTop: "20rem", marginBottom: "5rem" }}>
-        <div style={{ display: "flex", flexDirection: "row" }}>
           {/* Contenedor de la imagen con loader */}
           <div
             style={{
@@ -77,7 +58,7 @@ function About() {
             style={{
               display: "flex",
               //   height: "500px",
-              width: "50%",
+              width: "inherit",
               fontWeight: "600",
               fontSize: "2rem",
               flexDirection: "column",
@@ -85,21 +66,43 @@ function About() {
             }}
           >
             <p style={{ margin: "0px" }}>
-              Senior Product Designer specializing in user-centric innovation
-              and product evolution.
+              Frontend & UX/UI Developer, merging design and functionality for
+              seamless user experiences.
             </p>
           </div>
         </div>
-        <p style={{ fontSize: "1.5rem", fontWeight: "200", marginTop: "5rem" }}>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, ultricies vel
-          in duis hendrerit suscipit. Arcu interdum neque nam aptent tortor non
-          nisi varius duis accumsan suspendisse nulla, ad at odio potenti lectus
-          ante vitae habitant vel tempus fringilla tincidunt, mollis pulvinar
-          porttitor semper vehicula sagittis himenaeos diam malesuada eu
-          penatibus. Phasellus dui interdum blandit dapibus mattis massa proin,
-          magnis natoque lacus sociosqu ac vitae, ridiculus penatibus nullam
-          dignissim erat aenean.
-        </p>
+        <div
+          style={{
+            display: "flex",
+            // justifyContent: "flex-start",
+            width: "100%",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "200",
+              marginTop: "5rem",
+              textAlign: "justify",
+              width: "70%",
+            }}
+          >
+            Passionate about crafting engaging and functional digital
+            experiences, I specialize in frontend development and UX/UI design,
+            merging aesthetics with seamless functionality. With experience in
+            the oil & gas sector and beyond, I have developed and optimized web
+            applications that enhance efficiency, usability, and performance.{" "}
+            <br />
+            <br /> My approach is centered on innovation, problem-solving, and
+            user-centric design. I excel at translating complex technical
+            requirements into intuitive interfaces, ensuring that every
+            interaction is both visually appealing and highly functional.
+            Proficient in modern frontend technologies, agile methodologies, and
+            design tools, I thrive in collaborative environments where
+            creativity and technical expertise intersect. <br />
+          </p>
+        </div>
+
         <div style={{ marginTop: "20rem" }}>
           <p style={{ fontSize: "3.5rem", fontWeight: "600", margin: "auto" }}>
             Work Experience

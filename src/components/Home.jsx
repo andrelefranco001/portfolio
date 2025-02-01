@@ -33,15 +33,32 @@ function Home() {
           <HighlightText>creative touch.</HighlightText>
         </p>
       </div>
+
       <Link
         to="/detail"
         style={{
-          backgroundColor: "#D9D9D9",
+          display: "block",
+          width: "100%",
+          height: "auto",
           borderRadius: "15px",
-          //   width: "200px",
-          height: "700px",
+          overflow: "hidden",
+          margin: "0 auto", // Centra el Link si es más pequeño que el ancho disponible
         }}
-      />
+      >
+        <img
+          src="../../src/assets/BarryandBrothers_banner_2.png"
+          alt="Barry and Brothers Banner"
+          style={{
+            width: "100%",
+            maxWidth: "100%", // Asegura que no sobrepase el contenedor padre
+            height: "auto",
+            objectFit: "cover", // Usa "contain" si quieres que no se recorte
+            borderRadius: "15px",
+            display: "block",
+          }}
+        />
+      </Link>
+
       <div
         style={{
           fontSize: "1.5rem",

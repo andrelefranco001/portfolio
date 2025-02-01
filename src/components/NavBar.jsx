@@ -19,7 +19,7 @@ function NavBar() {
       style={{
         // border: "1px solid red",
         position: "fixed",
-        width: "69.5%",
+        width: "69.6%",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
