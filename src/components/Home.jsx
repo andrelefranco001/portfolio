@@ -42,7 +42,7 @@ function Home() {
           height: "auto",
           borderRadius: "15px",
           overflow: "hidden",
-          margin: "0 auto", // Centra el Link si es más pequeño que el ancho disponible
+          margin: "0 auto",
         }}
       >
         <img
@@ -50,9 +50,9 @@ function Home() {
           alt="Barry and Brothers Banner"
           style={{
             width: "100%",
-            maxWidth: "100%", // Asegura que no sobrepase el contenedor padre
+            maxWidth: "100%",
             height: "auto",
-            objectFit: "cover", // Usa "contain" si quieres que no se recorte
+            objectFit: "cover",
             borderRadius: "15px",
             display: "block",
           }}
@@ -80,8 +80,6 @@ function Home() {
           <span
             style={{ display: "flex", flexDirection: "row", color: "#8b8b8b" }}
           >
-            {/* <p>Show more </p>{" "} */}
-
             <p> Show more</p>
             <HiArrowLongRight
               style={{ marginLeft: "1rem", marginTop: "2rem" }}
@@ -95,9 +93,7 @@ function Home() {
           fontWeight: "200",
           display: "flex",
           flexDirection: "row",
-          // justifyContent: "space-between",
           marginBottom: "10rem",
-          // border: "red solid 1px",
         }}
       >
         <span
@@ -114,7 +110,6 @@ function Home() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            // border: "red solid 1px",
           }}
         >
           {" "}
@@ -208,7 +203,6 @@ function Home() {
           fontWeight: "200",
           display: "flex",
           flexDirection: "row",
-          // justifyContent: "space-between",
           marginBottom: "10rem",
           // border: "red solid 1px",
         }}

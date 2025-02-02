@@ -7,7 +7,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Reduce el navbar al bajar 50px
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -17,7 +17,6 @@ function NavBar() {
   return (
     <div
       style={{
-        // border: "1px solid red",
         position: "fixed",
         width: "69.6%",
         display: "flex",
@@ -28,12 +27,12 @@ function NavBar() {
         zIndex: 1000,
 
         alignItems: "center",
-        fontSize: isScrolled ? "1.2rem" : "1.8rem", // Cambia el tamaño del texto
+        fontSize: isScrolled ? "1.2rem" : "1.8rem",
         fontWeight: "600",
         boxSizing: "border-box",
-        padding: isScrolled ? "0.5rem 1rem" : "1rem 1rem", // Ajusta el padding
-        height: isScrolled ? "50px" : "80px", // Reduce la altura del navbar
-        transition: "all 0.3s ease-in-out", // Transición suave
+        padding: isScrolled ? "0.5rem 1rem" : "1rem 1rem",
+        height: isScrolled ? "50px" : "80px",
+        transition: "all 0.3s ease-in-out",
       }}
     >
       <Link to="/" style={{ textDecoration: "none", color: "black" }}>
