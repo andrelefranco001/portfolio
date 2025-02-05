@@ -37,128 +37,136 @@ function DetailProject() {
           dignissim erat aenean.
         </p>
       </div>
-
+      {/* desde aca */}
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gridTemplateRows: "650px 650px 650px 20px 650px",
-          gap: "50px",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          // gridTemplateRows: "250px 550px 1200px 1200px 1200px",
+          gridTemplateRows: "repeat(5, auto)",
+
+          gap: "50px 10px",
         }}
       >
         <div
           style={{
             gridColumn: "span 2 / span 2",
-            backgroundColor: "#D9D9D9",
+            gridRow: "1 / 2",
+
+            // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
+            height: "15rem",
+            marginBottom: "2rem",
           }}
         >
-          1
-        </div>
-        <div
-          style={{
-            gridColumnStart: "3",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "15px",
-          }}
-        >
-          3
-        </div>
-        <div
-          style={{
-            gridColumn: "span 3 / span 3",
-            gridRowStart: "2",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "15px",
-          }}
-        >
-          4
-        </div>
-        <div
-          style={{
-            gridColumnStart: "3",
-            gridRowStart: "3",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "15px",
-          }}
-        >
-          5
-        </div>
-        <div
-          style={{
-            gridColumnStart: "2",
-            gridRowStart: "3",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "15px",
-          }}
-        >
-          6
-        </div>
-        <div
-          style={{
-            gridColumnStart: "1",
-            gridRowStart: "3",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "15px",
-          }}
-        >
-          7
+          <img
+            src="../../src/assets/pdbanner02.png"
+            style={{
+              display: "block",
+
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              aspectRatio: "1 / 1",
+              // border: "solid 1px red",
+            }}
+          />
         </div>
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "flex-end",
-            gap: "20px",
-            gridColumn: "span 3 / span 3",
-            gridRowStart: "4",
+            gridColumn: "span 2 / span 2",
 
-            height: "20px",
+            gridRow: "2 / 3",
+
+            // backgroundColor: "#D9D9D9",
+            borderRadius: "15px",
+            width: "100%",
+            // height: "650px",
+            overflow: "hidden",
           }}
         >
-          <div
+          <img
+            src="../../src/assets/pdbanner01.png"
             style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "50%",
-              cursor: "pointer",
-              background: "#D9D9D9",
-              border: "solid 1px #858585",
-              width: "50px",
-              height: "50px",
-              color: "#858585",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              // aspectRatio: "1 / 1",
+              // border: "solid 1px red",
             }}
-          >
-            <FaArrowLeft style={{ fontSize: "18px" }} />
-          </div>
-          <div
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gridColumn: "span 2 / span 2",
+
+            gridRow: "4 / 5",
+            // backgroundColor: "#D9D9D9",
+            borderRadius: "15px",
+            // height: "fit-content",
+          }}
+        >
+          <img
+            src="../../src/assets/pd01.png"
             style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "50%",
-              cursor: "pointer",
-              background: "#D9D9D9",
-              border: "solid 1px #858585",
-              width: "50px",
-              height: "50px",
-              color: "#858585",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              // aspectRatio: "1 / 1",
+              // border: "solid 1px red",
             }}
-          >
-            <FaArrowRight style={{ fontSize: "18px" }} />
-          </div>
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gridColumn: "span 2 / span 2",
+
+            gridRow: "6 / 7",
+            // backgroundColor: "#D9D9D9",
+            borderRadius: "15px",
+            // height: "fit-content",
+          }}
+        >
+          <img
+            src="../../src/assets/pd01_2.png"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              // aspectRatio: "1 / 1",
+              // border: "solid 1px red",
+            }}
+          />
         </div>
         <div
           style={{
-            gridColumn: "span 3 / span 3",
-            gridRowStart: "5",
-            backgroundColor: "#D9D9D9",
+            display: "flex",
+            justifyContent: "center",
+            gridColumn: "span 2 / span 2",
+            gridRow: " 8 / 9",
+
+            // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
+            height: "fit-content",
           }}
         >
-          6
+          <img
+            src="../../src/assets/pd01_3.png"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              // aspectRatio: "1 / 1",
+              // border: "solid 1px red",
+            }}
+          />
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
