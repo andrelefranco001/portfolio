@@ -70,7 +70,7 @@ function Home() {
         }}
       >
         <span>
-          <p style={{ fontWeight: "600" }}>Untitled project 1</p>
+          <p style={{ fontWeight: "600" }}>Barry & Brothers</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed
             do eiusmod tempor incididunt ut labore.

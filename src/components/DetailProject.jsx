@@ -1,12 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import ImageCarousel from "./ImageCarousel";
+
+const images1 = [
+  "/src/assets/pd01.png",
+  "/src/assets/pd01_2.png",
+  "/src/assets/pd01_3.png",
+];
+
+const images2 = [
+  "/src/assets/sd_1.png",
+  "/src/assets/sd_2.png",
+  "/src/assets/sd_3.png",
+];
+
 function DetailProject() {
   return (
     <div
       style={{
         // border: "red solid 1px",
-        marginTop: "20rem",
+        marginTop: "10rem",
         marginBottom: "5rem",
       }}
     >
@@ -45,7 +59,7 @@ function DetailProject() {
           // gridTemplateRows: "250px 550px 1200px 1200px 1200px",
           gridTemplateRows: "repeat(5, auto)",
 
-          gap: "50px 10px",
+          gap: "40px 10px",
         }}
       >
         <div
@@ -103,42 +117,44 @@ function DetailProject() {
             display: "flex",
             justifyContent: "center",
             gridColumn: "span 2 / span 2",
+            gridRow: " 4 / 5",
 
-            gridRow: "4 / 5",
             // backgroundColor: "#D9D9D9",
+            padding: "5rem",
             borderRadius: "15px",
-            // height: "fit-content",
+            height: "fit-content",
           }}
         >
-          <img
-            src="../../src/assets/pd01.png"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
-              // aspectRatio: "1 / 1",
-              // border: "solid 1px red",
-            }}
-          />
+          <ImageCarousel images={images1} />
         </div>
 
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "space-around",
             gridColumn: "span 2 / span 2",
+            gridRow: " 6 / 7",
 
-            gridRow: "6 / 7",
             // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
-            // height: "fit-content",
+            height: "fit-content",
           }}
         >
           <img
-            src="../../src/assets/pd01_2.png"
+            src="../../src/assets/longframe_1.png"
             style={{
-              width: "100%",
-              height: "100%",
+              width: "40%",
+              height: "40%",
+              objectFit: "contain",
+              // aspectRatio: "1 / 1",
+              // border: "solid 1px red",
+            }}
+          />
+          <img
+            src="../../src/assets/longframe_2.png"
+            style={{
+              width: "40%",
+              height: "40%",
               objectFit: "contain",
               // aspectRatio: "1 / 1",
               // border: "solid 1px red",
@@ -153,12 +169,29 @@ function DetailProject() {
             gridRow: " 8 / 9",
 
             // backgroundColor: "#D9D9D9",
+            padding: "5rem",
             borderRadius: "15px",
             height: "fit-content",
           }}
         >
+          <ImageCarousel images={images2} />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gridColumn: "span 2 / span 2",
+
+            gridRow: "10 / 11",
+
+            // backgroundColor: "#D9D9D9",
+            borderRadius: "15px",
+            width: "100%",
+            // height: "650px",
+            overflow: "hidden",
+          }}
+        >
           <img
-            src="../../src/assets/pd01_3.png"
+            src="../../src/assets/pdbanner03.png"
             style={{
               width: "100%",
               height: "100%",
