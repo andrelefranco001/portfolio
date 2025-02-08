@@ -19,7 +19,6 @@ function DetailProject() {
   return (
     <div
       style={{
-        // border: "red solid 1px",
         marginTop: "10rem",
         marginBottom: "5rem",
       }}
@@ -56,7 +55,6 @@ function DetailProject() {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
-          // gridTemplateRows: "250px 550px 1200px 1200px 1200px",
           gridTemplateRows: "repeat(5, auto)",
 
           gap: "40px 10px",
@@ -67,7 +65,6 @@ function DetailProject() {
             gridColumn: "span 2 / span 2",
             gridRow: "1 / 2",
 
-            // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
             height: "15rem",
             marginBottom: "2rem",
@@ -82,7 +79,6 @@ function DetailProject() {
               height: "100%",
               objectFit: "cover",
               aspectRatio: "1 / 1",
-              // border: "solid 1px red",
             }}
           />
         </div>
@@ -93,10 +89,8 @@ function DetailProject() {
 
             gridRow: "2 / 3",
 
-            // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
             width: "100%",
-            // height: "650px",
             overflow: "hidden",
           }}
         >
@@ -106,8 +100,6 @@ function DetailProject() {
               width: "100%",
               height: "100%",
               objectFit: "contain",
-              // aspectRatio: "1 / 1",
-              // border: "solid 1px red",
             }}
           />
         </div>
@@ -119,7 +111,6 @@ function DetailProject() {
             gridColumn: "span 2 / span 2",
             gridRow: " 4 / 5",
 
-            // backgroundColor: "#D9D9D9",
             padding: "5rem",
             borderRadius: "15px",
             height: "fit-content",
@@ -135,7 +126,6 @@ function DetailProject() {
             gridColumn: "span 2 / span 2",
             gridRow: " 6 / 7",
 
-            // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
             height: "fit-content",
           }}
@@ -146,8 +136,6 @@ function DetailProject() {
               width: "40%",
               height: "40%",
               objectFit: "contain",
-              // aspectRatio: "1 / 1",
-              // border: "solid 1px red",
             }}
           />
           <img
@@ -156,8 +144,6 @@ function DetailProject() {
               width: "40%",
               height: "40%",
               objectFit: "contain",
-              // aspectRatio: "1 / 1",
-              // border: "solid 1px red",
             }}
           />
         </div>
@@ -168,7 +154,6 @@ function DetailProject() {
             gridColumn: "span 2 / span 2",
             gridRow: " 8 / 9",
 
-            // backgroundColor: "#D9D9D9",
             padding: "5rem",
             borderRadius: "15px",
             height: "fit-content",
@@ -183,10 +168,8 @@ function DetailProject() {
 
             gridRow: "10 / 11",
 
-            // backgroundColor: "#D9D9D9",
             borderRadius: "15px",
             width: "100%",
-            // height: "650px",
             overflow: "hidden",
           }}
         >
@@ -196,8 +179,6 @@ function DetailProject() {
               width: "100%",
               height: "100%",
               objectFit: "contain",
-              // aspectRatio: "1 / 1",
-              // border: "solid 1px red",
             }}
           />
         </div>
