@@ -35,7 +35,7 @@ function Home() {
       </div>
 
       <Link
-        to="/detail"
+        to="/detail/barryandbrothers"
         style={{
           display: "block",
           width: "100%",
@@ -76,7 +76,10 @@ function Home() {
             do eiusmod tempor incididunt ut labore.
           </p>
         </span>
-        <Link to="/detail" style={{ textDecoration: "none", color: "#8b8b8b" }}>
+        <Link
+          to="/detail/barryandbrothers"
+          style={{ textDecoration: "none", color: "#8b8b8b" }}
+        >
           <span
             style={{ display: "flex", flexDirection: "row", color: "#8b8b8b" }}
           >

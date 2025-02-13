@@ -6,6 +6,7 @@ import styled from "styled-components";
 import DetailProject from "./components/DetailProject";
 import { GoArrowUp } from "react-icons/go";
 import { useEffect, useState } from "react";
+import projectsData from "./components/projectsData";
 
 const GridContainer = styled.div`
   display: grid;
@@ -55,10 +56,22 @@ function App() {
         <span />
         <Content>
           <NavBar />
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/detail" element={<DetailProject />} />
+          </Routes> */}
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            {projectsData.map((project) => (
+              <Route
+                key={project.id}
+                path={`/detail/${project.id}`}
+                element={<DetailProject {...project} />}
+              />
+            ))}
           </Routes>
         </Content>
         <span>
