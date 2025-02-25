@@ -10,29 +10,32 @@ const projectsData = [
 
     Today, choosing Barry & Brothers means acquiring more than just a garment—it means embracing a piece of history. A coat that will stand the test of time with the same dignity with which it was created, a sweater that will wrap moments and memories. Because within every fiber beats the spirit of a brand that understands true elegance is the kind that endures.`,
     bannerImages: [
-      "../../src/assets/pdbanner02.png",
-      "../../src/assets/pdbanner01.png",
+      "../../src/assets/pdbanner02.webp",
+      "../../src/assets/pdbanner01.webp",
     ],
     carousels: [
       {
         id: 1,
         images: [
-          "../../src/assets/pd01.png",
-          "../../src/assets/pd01_2.png",
-          "../../src/assets/pd01_3.png",
+          "../../src/assets/pd01.webp",
+          "../../src/assets/pd01_2.webp",
+          "../../src/assets/pd01_3.webp",
         ],
       },
       {
         id: 2,
         images: [
-          "../../src/assets/sd_1.png",
-          "../../src/assets/sd_2.png",
-          "../../src/assets/sd_3.png",
+          "../../src/assets/sd_1.webp",
+          "../../src/assets/sd_2.webp",
+          "../../src/assets/sd_3.webp",
         ],
       },
     ],
     extraImages: [
-      ["../../src/assets/longframe_1.png", "../../src/assets/longframe_2.png"],
+      [
+        "../../src/assets/longframe_1.webp",
+        "../../src/assets/longframe_2.webp",
+      ],
     ],
   },
   //   {

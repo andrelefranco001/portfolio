@@ -46,7 +46,7 @@ function Home() {
         }}
       >
         <img
-          src="../../src/assets/BarryandBrothers_banner_2.png"
+          src="../../src/assets/BarryandBrothers_banner_2.webp"
           alt="Barry and Brothers Banner"
           style={{
             width: "100%",
@@ -72,8 +72,9 @@ function Home() {
         <span>
           <p style={{ fontWeight: "600" }}>Barry & Brothers</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed
-            do eiusmod tempor incididunt ut labore.
+            Barry & Brothers is a fashion eCommerce brand that blends elegance
+            and tradition, <br /> inspired by the rich legacy of a historic
+            brand.
           </p>
         </span>
         <Link
@@ -259,7 +260,7 @@ function Home() {
 
       <span
         style={{
-          marginTop: "20rem",
+          marginTop: "10rem",
           width: "600px",
           fontWeight: "200",
           fontSize: "1.5rem",

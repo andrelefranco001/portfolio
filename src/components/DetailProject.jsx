@@ -16,7 +16,7 @@ function DetailProject({
         style={{
           display: "flex",
           flexDirection: "column",
-          marginBottom: "5rem",
+          marginBottom: "1rem",
         }}
       >
         <p
@@ -147,7 +147,7 @@ function DetailProject({
       {/* Footer */}
       <div
         style={{
-          marginTop: "20rem",
+          marginTop: "10rem",
           width: "600px",
           fontWeight: "200",
           fontSize: "1.5rem",

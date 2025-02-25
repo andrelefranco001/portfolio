@@ -234,7 +234,7 @@ function About() {
 
       <span
         style={{
-          marginTop: "20rem",
+          marginTop: "10rem",
           width: "600px",
           fontWeight: "200",
           fontSize: "1.5rem",
