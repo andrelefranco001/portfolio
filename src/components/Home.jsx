@@ -3,6 +3,9 @@ import NavBar from "./NavBar";
 import styled from "styled-components";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import BarryandBrothers_banner from "../../src/assets/BarryandBrothers_banner_2.webp";
+import kino_banner from "../../src/assets/kino_banner.webp";
+import poem_banner from "../../src/assets/poem_banner.webp";
 
 const HighlightText = styled.span`
   font-size: 1.7rem;
@@ -47,7 +50,7 @@ function Home() {
         }}
       >
         <img
-          src="../../src/assets/kino_banner.webp"
+          src={kino_banner}
           alt="Kino E Banner"
           style={{
             width: "100%",
@@ -114,7 +117,7 @@ function Home() {
           }}
         >
           <img
-            src="../../src/assets/poem_banner.webp"
+            src={poem_banner}
             alt="The Poem Mind Banner"
             style={{
               width: "100%",
@@ -189,7 +192,7 @@ function Home() {
           }}
         >
           <img
-            src="../../src/assets/BarryandBrothers_banner_2.webp"
+            src={BarryandBrothers_banner}
             alt="Barry & Brothers Banner"
             style={{
               width: "100%",

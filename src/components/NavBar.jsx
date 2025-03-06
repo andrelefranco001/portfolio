@@ -35,7 +35,7 @@ function NavBar() {
         transition: "all 0.3s ease-in-out",
       }}
     >
-      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+      <Link to="/portfolio/" style={{ textDecoration: "none", color: "black" }}>
         <p style={{ backdropFilter: "blur(5px)" }}>Andres Velasquez</p>
       </Link>
 

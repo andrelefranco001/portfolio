@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import profile from "../../src/assets/VOSTOK282982.jpg";
 
 function About() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,7 +42,7 @@ function About() {
               </div>
             )}
             <img
-              src="../../src/assets/VOSTOK282982.jpg"
+              src={profile}
               onLoad={() => setIsLoading(false)}
               style={{
                 borderRadius: "15px",

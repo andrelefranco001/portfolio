@@ -60,7 +60,7 @@ function App() {
         <Content>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/portfolio/" element={<Home />} />
             <Route path="/about" element={<About />} />
             {projectsData.map((project) => (
               <Route

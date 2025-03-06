@@ -127,7 +127,7 @@ function DetailProject({
       {/* Botón para regresar */}
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Link
-          to="/"
+          to="/portfolio/"
           style={{
             display: "flex",
             justifyContent: "center",
