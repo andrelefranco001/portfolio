@@ -103,7 +103,7 @@ function Home() {
         <span
           style={{
             display: "block",
-            width: "100%",
+            width: "70%",
             height: "auto",
             borderRadius: "15px",
             overflow: "hidden",
@@ -125,36 +125,43 @@ function Home() {
         </span>
         <div
           style={{
+            width: "30%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
           }}
         >
           {" "}
-          <span style={{ width: "auto", marginLeft: "3rem" }}>
+          <span style={{ width: "100%", marginLeft: "3rem" }}>
             <p style={{ fontWeight: "600", margin: "auto" }}>
               "Kino E" Streaming Platform
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod <br />
-              tempor incididunt ut labore.
+              Discover the cinema you didn’t know you were looking for. At Kino
+              E, we bring you a curated selection of unique films, independent
+              gems, and cult classics. Every week, a fresh collection designed
+              for true cinephiles — stories that challenge, inspire, and stay
+              with you.
             </p>
           </span>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              color: "#8b8b8b",
-              padding: "0px",
-              // border: "red solid 1px",
-            }}
+          <Link
+            to="/detail/kinoestreaming"
+            style={{ textDecoration: "none", color: "#8b8b8b" }}
           >
-            <p style={{ margin: "0px", marginLeft: "3rem" }}>Show more </p>{" "}
-            <HiArrowLongRight
-              style={{ marginLeft: "1rem", marginTop: "0.6rem" }}
-            />
-          </div>
+            <span
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                color: "#8b8b8b",
+                marginLeft: "3rem",
+              }}
+            >
+              <p> Show more</p>
+              <HiArrowLongRight
+                style={{ marginLeft: "1rem", marginTop: "2rem" }}
+              />
+            </span>
+          </Link>
         </div>
       </div>
 

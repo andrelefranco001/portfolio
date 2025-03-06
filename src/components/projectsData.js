@@ -38,27 +38,39 @@ const projectsData = [
       ],
     ],
   },
-  //   {
-  //     id: 2,
-  //     title: "Another Cool Project",
-  //     description: "This is another project showcasing a different layout...",
-  //     bannerImages: [
-  //       "../../src/assets/project2_banner01.png",
-  //       "../../src/assets/project2_banner02.png",
-  //     ],
-  //     carousels: [
-  //       [
-  //         "../../src/assets/project2_carousel1.png",
-  //         "../../src/assets/project2_carousel2.png",
-  //       ],
-  //     ],
-  //     extraImages: [
-  //       [
-  //         "../../src/assets/project2_image1.png",
-  //         "../../src/assets/project2_image2.png",
-  //       ],
-  //     ],
-  //   },
+  {
+    id: "kinoestreaming",
+    title: "Kino E Streaming Platform",
+    description: "This is another project showcasing a different layout...",
+    bannerImages: [
+      "../../src/assets/kino_title.webp",
+      // "../../src/assets/project2_banner02.png",
+    ],
+    carousels: [
+      {
+        id: 1,
+        images: [
+          "../../src/assets/kino_detail_1.webp",
+          "../../src/assets/kino_detail_2.webp",
+          "../../src/assets/kino_detail_3.webp",
+        ],
+      },
+      {
+        id: 2,
+        images: [
+          "../../src/assets/kino_phone_1.webp",
+          "../../src/assets/kino_phone_2.webp",
+          "../../src/assets/kino_phone_3.webp",
+        ],
+      },
+    ],
+    extraImages: [
+      [
+        "../../src/assets/kino_long_1.webp",
+        "../../src/assets/kino_long_2.webp",
+      ],
+    ],
+  },
 ];
 
 export default projectsData;
