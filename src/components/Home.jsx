@@ -102,13 +102,27 @@ function Home() {
       >
         <span
           style={{
-            backgroundColor: "#D9D9D9",
+            display: "block",
+            width: "100%",
+            height: "auto",
             borderRadius: "15px",
-            width: "900px",
-            height: "500px",
-            marginRight: "3rem",
+            overflow: "hidden",
+            margin: "0 auto",
           }}
-        />
+        >
+          <img
+            src="../../src/assets/kino_banner.webp"
+            alt="Kino E Banner"
+            style={{
+              width: "100%",
+              maxWidth: "100%",
+              height: "auto",
+              objectFit: "cover",
+              borderRadius: "15px",
+              display: "block",
+            }}
+          />
+        </span>
         <div
           style={{
             display: "flex",
@@ -117,9 +131,9 @@ function Home() {
           }}
         >
           {" "}
-          <span style={{ width: "auto" }}>
+          <span style={{ width: "auto", marginLeft: "3rem" }}>
             <p style={{ fontWeight: "600", margin: "auto" }}>
-              Untitled project 2
+              "Kino E" Streaming Platform
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -136,7 +150,7 @@ function Home() {
               // border: "red solid 1px",
             }}
           >
-            <p style={{ margin: "0px" }}>Show more </p>{" "}
+            <p style={{ margin: "0px", marginLeft: "3rem" }}>Show more </p>{" "}
             <HiArrowLongRight
               style={{ marginLeft: "1rem", marginTop: "0.6rem" }}
             />
@@ -144,8 +158,9 @@ function Home() {
         </div>
       </div>
 
-      {/*  */}
-      <div
+      <div>
+        {" "}
+        {/* <div
         style={{
           fontSize: "1.5rem",
           fontWeight: "200",
@@ -199,8 +214,9 @@ function Home() {
             marginLeft: "3rem",
           }}
         />
+      </div> */}
+        {/*  */}
       </div>
-      {/*  */}
       <div
         style={{
           fontSize: "1.5rem",
@@ -208,31 +224,41 @@ function Home() {
           display: "flex",
           flexDirection: "row",
           marginBottom: "10rem",
-          // border: "red solid 1px",
         }}
       >
         <span
           style={{
-            backgroundColor: "#D9D9D9",
+            display: "block",
+            width: "100%",
+            height: "auto",
             borderRadius: "15px",
-            width: "900px",
-            height: "500px",
-            marginRight: "3rem",
+            overflow: "hidden",
+            margin: "0 auto",
           }}
-        />
+        >
+          <img
+            src="../../src/assets/poem_banner.webp"
+            alt="The Poem Mind Banner"
+            style={{
+              width: "100%",
+              maxWidth: "100%",
+              height: "auto",
+              objectFit: "cover",
+              borderRadius: "15px",
+              display: "block",
+            }}
+          />
+        </span>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            // border: "red solid 1px",
           }}
         >
           {" "}
-          <span style={{ width: "500px" }}>
-            <p style={{ fontWeight: "600", margin: "auto" }}>
-              Untitled project 4
-            </p>
+          <span style={{ width: "auto", marginLeft: "3rem" }}>
+            <p style={{ fontWeight: "600", margin: "auto" }}>The Poem Mind</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod <br />
@@ -248,7 +274,7 @@ function Home() {
               // border: "red solid 1px",
             }}
           >
-            <p style={{ margin: "0px" }}>Show more </p>{" "}
+            <p style={{ margin: "0px", marginLeft: "3rem" }}>Show more </p>{" "}
             <HiArrowLongRight
               style={{ marginLeft: "1rem", marginTop: "0.6rem" }}
             />

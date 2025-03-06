@@ -220,11 +220,11 @@ function About() {
               }}
             >
               <strong style={{ fontWeight: "600" }}>
-                Bachelor of Visual Arts/
+                Bachelor’s Degree in Visual Arts
               </strong>
               <div style={{ marginLeft: "1rem", marginTop: "1rem" }}>
-                <strong>Freelance</strong>
-                <li> 2022 - present</li>
+                <strong>Instituto Tecnológico Metropolitano</strong>
+                <li> 2014 - 2021</li>
               </div>
             </ol>
           </div>
