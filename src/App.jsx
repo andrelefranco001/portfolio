@@ -7,6 +7,8 @@ import DetailProject from "./components/DetailProject";
 import { GoArrowUp } from "react-icons/go";
 import { useEffect, useState } from "react";
 import projectsData from "./components/projectsData";
+import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 const GridContainer = styled.div`
   display: grid;
@@ -52,16 +54,11 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <GridContainer>
         <span />
         <Content>
           <NavBar />
-          {/* <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/detail" element={<DetailProject />} />
-          </Routes> */}
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -73,6 +70,7 @@ function App() {
               />
             ))}
           </Routes>
+          <Footer />
         </Content>
         <span>
           <ScrollToTopButton onClick={scrollToTop} visible={showScroll}>

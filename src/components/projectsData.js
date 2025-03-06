@@ -2,13 +2,11 @@ const projectsData = [
   {
     id: "barryandbrothers",
     title: "Barry & Brothers: A Legacy Woven in Tradition",
-    description: `Over a century ago, in a small tailor shop in London, two brothers passionate about craftsmanship and quality set out to create more than just clothing—they wanted to design pieces that told stories. Thus, Barry & Brothers was born, a brand that, with every intertwined thread of cashmere, built a legacy of elegance, tradition, and exclusivity.
+    description: `Barry & Brothers is a fashion eCommerce platform rooted in heritage and craftsmanship. Inspired by the legacy of a historic London tailor shop, the brand blends timeless elegance with artisanal expertise, offering garments that carry both history and modern refinement.
 
-    From the very beginning, the brand became synonymous with understated luxury. It was never just about sweaters and coats but about pieces that accompanied entire generations, carrying the warmth of expert craftsmanship and the sophistication of timeless design. Every stitch bore the dedication of master artisans, and every fabric reflected an unwavering commitment to excellence.
+More than just clothing, each piece tells a story — from luxurious cashmere sweaters to impeccably tailored coats, every thread reflects dedication to quality and the pursuit of understated luxury. Barry & Brothers is for those who appreciate tradition reimagined for the present.
 
-    As time passed, Barry & Brothers evolved without losing its essence. Rooted in tradition yet firmly grounded in the present, the brand crafted an experience tailored for those who appreciate simplicity without sacrificing refinement. Every detail, from the selection of materials to the seamless digital experience, was designed to convey the exclusivity and durability that define its identity.
-
-    Today, choosing Barry & Brothers means acquiring more than just a garment—it means embracing a piece of history. A coat that will stand the test of time with the same dignity with which it was created, a sweater that will wrap moments and memories. Because within every fiber beats the spirit of a brand that understands true elegance is the kind that endures.`,
+With a seamless digital shopping experience and a commitment to lasting craftsmanship, Barry & Brothers invites you to wear history — to embrace garments designed not just for seasons, but for generations to come.`,
     bannerImages: [
       "../../src/assets/pdbanner02.webp",
       "../../src/assets/pdbanner01.webp",
@@ -40,7 +38,7 @@ const projectsData = [
   },
   {
     id: "kinoestreaming",
-    title: "Kino E Streaming Platform",
+    title: "Kino E - Streaming Platform",
     description: `Kino E is a streaming platform that celebrates the diversity of cinema, blending independent gems, cult classics, and handpicked commercial films that have left a cultural mark. Our mission is to curate films that matter — stories that move beyond trends and algorithms to offer a richer, more meaningful viewing experience.
 
 Every week, Kino E brings a new themed collection, connecting films through creative ideas, visual styles, or cultural relevance. Whether it’s bold experimental works, iconic blockbusters, or emerging voices from around the world, we believe great cinema comes in many forms — and all of them deserve a place here.
@@ -78,7 +76,9 @@ At Kino E, we invite you to watch differently. To slow down, to explore, and to 
   {
     id: "thepoemmind",
     title: "The Poem Mind: A Journey Through Words",
-    description: `In a world where words are often lost in the noise, The Poem Mind is a sanctuary for those who seek the beauty of language. A digital platform that celebrates the art of poetry, it offers a space for readers, writers, and dreamers to connect through the power of verse.`,
+    description: `The Poem Mind was created to give poetry a space where it can unfold naturally, without interruption or predefined order. Instead of searching for poems, you let them find you. Each time you enter, a vertical scroll of words awaits, blending poets from different eras, styles, and languages.
+
+This is not an archive, nor a traditional literary site. It’s a flowing stream — a space where literature becomes fluid, where poems from the past and present coexist and expand endlessly. Every visit is different, every scroll a new discovery.`,
 
     bannerImages: [
       "../../src/assets/poem_title.webp",

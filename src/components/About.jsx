@@ -66,8 +66,8 @@ function About() {
             }}
           >
             <p style={{ margin: "0px" }}>
-              Frontend & UX/UI Developer, merging design and functionality for
-              seamless user experiences.
+              Frontend Developer & UX/UI Designer — Building experiences that
+              make sense.
             </p>
           </div>
         </div>
@@ -87,19 +87,21 @@ function About() {
               width: "70%",
             }}
           >
-            Passionate about crafting engaging and functional digital
-            experiences, I specialize in frontend development and UX/UI design,
-            merging aesthetics with seamless functionality. With experience in
-            the oil & gas sector and beyond, I have developed and optimized web
-            applications that enhance efficiency, usability, and performance.{" "}
-            <br />
-            <br /> My approach is centered on innovation, problem-solving, and
-            user-centric design. I excel at translating complex technical
-            requirements into intuitive interfaces, ensuring that every
-            interaction is both visually appealing and highly functional.
-            Proficient in modern frontend technologies, agile methodologies, and
-            design tools, I thrive in collaborative environments where
-            creativity and technical expertise intersect. <br />
+            I’m a frontend developer and UX/UI designer with a strong focus on
+            creating interfaces that are not only visually appealing but also
+            intuitive and efficient. My work blends creativity and
+            functionality, always putting users at the center. <br />
+            <br /> With hands-on experience developing and optimizing web
+            applications in industries like oil & gas, I’ve learned how to
+            design for complex workflows where clarity and performance are
+            critical. Whether it’s simplifying technical processes or crafting
+            elegant user journeys, I thrive at turning challenging requirements
+            into seamless experiences. <br />
+            <br /> I’m passionate about solving problems through design and
+            technology, constantly exploring new tools and methods to enhance
+            usability and innovation. Comfortable working in agile teams, I
+            enjoy the collaborative process that turns ideas into fully
+            functional products. <br />
           </p>
         </div>
 
@@ -126,7 +128,7 @@ function About() {
               }}
             >
               <strong style={{ fontWeight: "600" }}>
-                FrontEnd Developer and UX/UI Design
+                Frontend Developer & UX/UI Designer
               </strong>
               <div style={{ marginLeft: "1rem", marginTop: "1rem" }}>
                 <strong>Decimetrix SAS</strong>
@@ -142,7 +144,7 @@ function About() {
               }}
             >
               <strong style={{ fontWeight: "600" }}>
-                FrontEnd Developer and UX/UI Design
+                Frontend Developer & UX/UI Designer
               </strong>
               <div style={{ marginLeft: "1rem", marginTop: "1rem" }}>
                 <strong>Freelance</strong>
@@ -230,36 +232,6 @@ function About() {
           </div>
         </div>
       </div>
-      {/* Footer */}
-
-      <span
-        style={{
-          marginTop: "10rem",
-          width: "600px",
-          fontWeight: "200",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p>
-          Whether you have a project in mind, want to collaborate,
-          <br /> or just say hi—I'd love to connect! I'm currently open to new
-          opportunities.
-        </p>
-      </span>
-      <span
-        style={{
-          margin: "5rem 0rem",
-          width: "600px",
-          fontWeight: "600",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p style={{ fontSize: "3.5rem", fontWeight: "600" }}>
-          andresvelasquezfranco@gmail.com
-        </p>
-        <p>LinkedIn</p>
-      </span>
-      <p>© Andres Velasquez Franco</p>
 
       {/* Estilos para el spinner */}
       <style>

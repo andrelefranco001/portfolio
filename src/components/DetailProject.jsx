@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ImageCarousel from "./ImageCarousel";
+import Footer from "./Footer";
 
 function DetailProject({
   title,
@@ -143,35 +144,6 @@ function DetailProject({
           <div>Show all projects</div>
         </Link>
       </div>
-
-      {/* Footer */}
-      <div
-        style={{
-          marginTop: "10rem",
-          width: "600px",
-          fontWeight: "200",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p>
-          Whether you have a project in mind, want to collaborate, or just say
-          hi—I'd love to connect! I'm currently open to new opportunities.
-        </p>
-      </div>
-      <div
-        style={{
-          margin: "5rem 0rem",
-          width: "600px",
-          fontWeight: "600",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p style={{ fontSize: "3.5rem", fontWeight: "600" }}>
-          andresvelasquezfranco@gmail.com
-        </p>
-        <p>LinkedIn</p>
-      </div>
-      <p>© Andres Velasquez Franco</p>
     </div>
   );
 }
