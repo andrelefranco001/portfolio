@@ -100,7 +100,8 @@ function Home() {
           marginBottom: "10rem",
         }}
       >
-        <span
+        <Link
+          to="/detail/kinoestreaming"
           style={{
             display: "block",
             width: "70%",
@@ -122,7 +123,7 @@ function Home() {
               display: "block",
             }}
           />
-        </span>
+        </Link>
         <div
           style={{
             width: "30%",
@@ -134,7 +135,7 @@ function Home() {
           {" "}
           <span style={{ width: "100%", marginLeft: "3rem" }}>
             <p style={{ fontWeight: "600", margin: "auto" }}>
-              "Kino E" Streaming Platform
+              Kino E - Streaming Platform
             </p>
             <p>
               Discover the cinema you didn’t know you were looking for. At Kino
@@ -233,10 +234,11 @@ function Home() {
           marginBottom: "10rem",
         }}
       >
-        <span
+        <Link
+          to="/detail/thepoemmind"
           style={{
             display: "block",
-            width: "100%",
+            width: "70%",
             height: "auto",
             borderRadius: "15px",
             overflow: "hidden",
@@ -255,10 +257,12 @@ function Home() {
               display: "block",
             }}
           />
-        </span>
+        </Link>
+
         <div
           style={{
             display: "flex",
+            width: "30%",
             flexDirection: "column",
             justifyContent: "space-between",
           }}
@@ -272,20 +276,24 @@ function Home() {
               tempor incididunt ut labore.
             </p>
           </span>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              color: "#8b8b8b",
-              padding: "0px",
-              // border: "red solid 1px",
-            }}
+          <Link
+            to="/detail/thepoemmind"
+            style={{ textDecoration: "none", color: "#8b8b8b" }}
           >
-            <p style={{ margin: "0px", marginLeft: "3rem" }}>Show more </p>{" "}
-            <HiArrowLongRight
-              style={{ marginLeft: "1rem", marginTop: "0.6rem" }}
-            />
-          </div>
+            <span
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                color: "#8b8b8b",
+                marginLeft: "3rem",
+              }}
+            >
+              <p> Show more</p>
+              <HiArrowLongRight
+                style={{ marginLeft: "1rem", marginTop: "2rem" }}
+              />
+            </span>
+          </Link>
         </div>
       </div>
 
@@ -316,7 +324,9 @@ function Home() {
         <p style={{ fontSize: "3.5rem", fontWeight: "600" }}>
           andresvelasquezfranco@gmail.com
         </p>
-        <p>LinkedIn</p>
+        <Link to={"https://www.linkedin.com/in/andressoftwareengineer/"}>
+          LinkedIn
+        </Link>
       </span>
       <p>© Andres Velasquez Franco</p>
     </>

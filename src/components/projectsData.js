@@ -41,7 +41,11 @@ const projectsData = [
   {
     id: "kinoestreaming",
     title: "Kino E Streaming Platform",
-    description: "This is another project showcasing a different layout...",
+    description: `Kino E is a streaming platform that celebrates the diversity of cinema, blending independent gems, cult classics, and handpicked commercial films that have left a cultural mark. Our mission is to curate films that matter — stories that move beyond trends and algorithms to offer a richer, more meaningful viewing experience.
+
+Every week, Kino E brings a new themed collection, connecting films through creative ideas, visual styles, or cultural relevance. Whether it’s bold experimental works, iconic blockbusters, or emerging voices from around the world, we believe great cinema comes in many forms — and all of them deserve a place here.
+
+At Kino E, we invite you to watch differently. To slow down, to explore, and to discover films that might just become your next obsession. Because we believe that cinema is more than just entertainment — it’s a journey, a conversation, and a reflection of the world we live in.`,
     bannerImages: [
       "../../src/assets/kino_title.webp",
       // "../../src/assets/project2_banner02.png",
@@ -68,6 +72,40 @@ const projectsData = [
       [
         "../../src/assets/kino_long_1.webp",
         "../../src/assets/kino_long_2.webp",
+      ],
+    ],
+  },
+  {
+    id: "thepoemmind",
+    title: "The Poem Mind: A Journey Through Words",
+    description: `In a world where words are often lost in the noise, The Poem Mind is a sanctuary for those who seek the beauty of language. A digital platform that celebrates the art of poetry, it offers a space for readers, writers, and dreamers to connect through the power of verse.`,
+
+    bannerImages: [
+      "../../src/assets/poem_title.webp",
+      // "../../src/assets/project2_banner02.png",
+    ],
+    carousels: [
+      {
+        id: 1,
+        images: [
+          "../../src/assets/poem_detail_1.webp",
+          "../../src/assets/poem_detail_2.webp",
+          // "../../src/assets/kino_detail_3.webp",
+        ],
+      },
+      {
+        id: 2,
+        images: [
+          "../../src/assets/poem_phone_1.webp",
+          "../../src/assets/poem_phone_2.webp",
+          "../../src/assets/poem_phone_3.webp",
+        ],
+      },
+    ],
+    extraImages: [
+      [
+        "../../src/assets/poem_long_1.webp",
+        "../../src/assets/poem_long_2.webp",
       ],
     ],
   },
