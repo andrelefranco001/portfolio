@@ -36,11 +36,11 @@ function NavBar() {
       }}
     >
       <Link to="/portfolio/" style={{ textDecoration: "none", color: "black" }}>
-        <p style={{ backdropFilter: "blur(5px)" }}>Andres Velasquez</p>
+        <span style={{ backdropFilter: "blur(5px)" }}>Andres Velasquez</span>
       </Link>
 
       <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
-        <p style={{ backdropFilter: "blur(5px)" }}>About</p>
+        <span style={{ backdropFilter: "blur(5px)" }}>About</span>
       </Link>
     </div>
   );

@@ -16,6 +16,13 @@ const GridContainer = styled.div`
   /* gap: 16px; */
   width: 100%;
   min-height: 100vh;
+
+  /* @media (min-width: 1024px) {
+    grid-template-columns: 1fr 70% 1fr;
+  } */
+  @media (max-width: 768px) {
+    grid-template-columns: 5% 90% 5%;
+  }
 `;
 
 const Content = styled.div`
@@ -29,13 +36,17 @@ const ScrollToTopButton = styled.button`
   bottom: 20px;
   /* right: 20px; */
   margin-left: 2rem;
-  background-color: transparent;
+  background-color: #e6e6e6;
   color: #5a5a5a;
   border: solid 1px #5a5a5a;
   padding: 9px 10px;
   border-radius: 50%;
   cursor: pointer;
   display: ${(props) => (props.visible ? "block" : "none")};
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 function App() {
   const [showScroll, setShowScroll] = useState(false);

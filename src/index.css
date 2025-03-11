@@ -24,10 +24,10 @@ body {
 }
 
 ::selection {
-  background-color: rgb(
-    255,
-    123,
-    0
-  ); /* Cambia el color de fondo de la selección */
-  color: black; /* Cambia el color del texto seleccionado */
+  background-color: rgb(255, 123, 0);
+  color: black;
+}
+
+p {
+  font-weight: 200;
 }

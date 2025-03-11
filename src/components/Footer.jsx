@@ -1,73 +1,122 @@
 import React from "react";
+import styled from "styled-components";
+
+const FooterContainer = styled.footer`
+  margin-top: 4rem;
+  text-align: start;
+  padding: 0 1rem;
+  @media (max-width: 768px) {
+    margin-top: 5rem;
+    /* text-align: center; */
+  }
+
+  .CopyrightText {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+    @media (max-width: 768px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  .LinkText {
+    font-size: 1.5rem;
+    color: #f75252;
+
+    font-weight: 600;
+    text-decoration: underline;
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+`;
+
+const TextContainer = styled.div`
+  margin-top: 10rem;
+  width: 600px;
+  font-weight: 200;
+  font-size: 1.5rem;
+  @media (max-width: 1440px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+`;
+
+const TextEmail = styled.p`
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+  }
+`;
+
+const LinkText = styled.a`
+  font-size: 1.5rem;
+
+  color: #000000;
+  font-weight: 600;
+  text-decoration: underline;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
+
+const CopyrightText = styled.p`
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 15px;
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+`;
+const FindMeOnText = styled.div`
+  font-size: 1.5rem;
+  font-weight: 200;
+  @media (max-width: 1440px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        marginTop: "10rem",
-        textAlign: "start",
-        // fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <div
-        style={{
-          marginTop: "10rem",
-          width: "600px",
-          fontWeight: "200",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p>
-          Whether you have a project in mind, want to collaborate, or just say
-          hi—I'd love to connect! I'm currently open to new opportunities.
-        </p>
-      </div>
+    <FooterContainer>
+      <TextContainer>
+        Whether you have a project in mind, want to collaborate, or just say
+        hi—I'd love to connect! I'm currently open to new opportunities.
+      </TextContainer>
 
-      <div
-        style={{
-          margin: "5rem 0rem",
-          width: "600px",
-          fontWeight: "600",
-          fontSize: "1.5rem",
-        }}
-      >
-        <p
-          style={{
-            fontSize: "2.5rem",
-            fontWeight: "600",
-            margin: "0 0 10px 0",
-          }}
-        >
-          andresvelasquezfranco@gmail.com
-        </p>
+      <TextEmail>andresvelasquezfranco@gmail.com</TextEmail>
+
+      <FindMeOnText>
+        Find me on{" "}
         <a
+          className="LinkText"
           href="https://www.linkedin.com/in/andressoftwareengineer/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            textDecoration: "none",
-            color: "rgba(0, 0, 0, 0.87)",
-            fontWeight: "200",
-          }}
         >
-          Find me on{" "}
-          <span style={{ fontWeight: "600", textDecoration: "underline" }}>
-            LinkedIn
-          </span>
+          LinkedIn
         </a>
-      </div>
+      </FindMeOnText>
 
-      <p
-        style={{
-          fontSize: "0.9rem",
-          color: "#555",
-          marginTop: "15px",
-        }}
-      >
+      <p className="CopyrightText">
         © Andres Velasquez Franco {new Date().getFullYear()}. All rights
         reserved.
       </p>
-    </footer>
+    </FooterContainer>
   );
 };
 
