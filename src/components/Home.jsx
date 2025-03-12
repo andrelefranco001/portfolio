@@ -7,7 +7,6 @@ import kino_banner from "../../src/assets/kino_banner.webp";
 import poem_banner from "../../src/assets/poem_banner.webp";
 
 const HighlightText = styled.span`
-  font-size: 1.7rem;
   font-weight: 600;
   background: rgb(96, 7, 148);
   background: linear-gradient(
@@ -20,8 +19,15 @@ const HighlightText = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 const Container = styled.div`
+  font-size: 1.7rem;
+  font-weight: 200;
+
   margin-top: 9rem;
   margin-bottom: 5rem;
+
+  @media (max-width: 1440px) {
+    font-size: 1.3rem;
+  }
   @media (max-width: 1024px) {
     margin-top: 7rem;
     margin-bottom: 4rem;
@@ -109,10 +115,6 @@ const ProjectLink = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #8b8b8b;
-  /* margin-left: 3rem; */
-  /* @media (max-width: 1024px) {
-    margin-left: 2rem;
-  } */
   @media (max-width: 768px) {
     margin-left: 0;
   }
@@ -120,7 +122,6 @@ const ProjectLink = styled(Link)`
   .margin-description {
     @media (min-width: 1440px) {
       margin-left: 3rem;
-      color: red;
     }
   }
 `;
@@ -135,6 +136,7 @@ const ProjectRow = styled.div`
     width: 100%;
     flex-direction: column;
     margin-bottom: 9rem;
+    font-size: 1.3rem;
   }
   @media (max-width: 1200px) {
     flex-direction: column;
@@ -150,9 +152,6 @@ const ProjectRow = styled.div`
   }
   @media (max-width: 480px) {
     margin-bottom: 3rem;
-  }
-  .clas {
-    font-size: 5.5rem;
   }
 `;
 
@@ -177,7 +176,7 @@ function Home() {
   return (
     <>
       <Container>
-        <p style={{ fontSize: "1.7rem", fontWeight: "200" }}>
+        <p>
           Welcome to my <HighlightText>Digital Playground</HighlightText>.
           Here’s a curated selection of projects where design and functionality
           come together.
