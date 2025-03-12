@@ -12,14 +12,10 @@ import Footer from "./components/Footer";
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 70% 1fr;
-  /* gap: 16px; */
+  grid-template-columns: 5% 90% 5%;
   width: 100%;
   min-height: 100vh;
 
-  /* @media (min-width: 1024px) {
-    grid-template-columns: 1fr 70% 1fr;
-  } */
   @media (max-width: 768px) {
     grid-template-columns: 5% 90% 5%;
   }
@@ -29,12 +25,12 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  grid-column: 2; /* Ensure it spans the middle column */
 `;
 
 const ScrollToTopButton = styled.button`
   position: fixed;
   bottom: 20px;
-  /* right: 20px; */
   margin-left: 2rem;
   background-color: #e6e6e6;
   color: #5a5a5a;
@@ -48,6 +44,7 @@ const ScrollToTopButton = styled.button`
     display: none;
   }
 `;
+
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
