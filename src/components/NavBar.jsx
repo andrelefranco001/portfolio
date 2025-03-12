@@ -9,8 +9,8 @@ const NavBarContainer = styled.div`
 
 const HighlightText = styled.div`
   position: fixed;
-  left: 5%; /* Align with the grid */
-  width: 90%; /* Align with the grid */
+  left: 15%; /* Align with the grid */
+  width: 70%; /* Align with the grid */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const FooterContainer = styled.footer`
   margin-top: 4rem;
   text-align: start;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   @media (max-width: 768px) {
     margin-top: 5rem;
     /* text-align: center; */
@@ -54,7 +54,7 @@ const TextEmail = styled.p`
     font-size: 2rem;
   }
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 5rem;
   }
 `;

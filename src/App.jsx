@@ -12,13 +12,13 @@ import Footer from "./components/Footer";
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 15% 70% 15%;
   width: 100%;
   min-height: 100vh;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     grid-template-columns: 5% 90% 5%;
-  }
+  } */
 `;
 
 const Content = styled.div`
