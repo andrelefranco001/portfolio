@@ -25,18 +25,21 @@ const Container = styled.div`
   margin-top: 9rem;
   margin-bottom: 5rem;
 
-  @media (max-width: 1440px) {
-    font-size: 1.3rem;
-  }
   @media (max-width: 1024px) {
+    font-size: 1.7rem;
+
     margin-top: 7rem;
     margin-bottom: 4rem;
   }
   @media (max-width: 768px) {
+    font-size: 1.4rem;
+
     margin-top: 5rem;
     margin-bottom: 3rem;
   }
   @media (max-width: 480px) {
+    font-size: 1.1rem;
+
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
@@ -91,37 +94,77 @@ const ProjectContainer = styled.div`
 const ProjectDescription = styled.span`
   .weight {
     font-weight: 600;
+    font-size: 1.5rem;
   }
+
+  .margin-other {
+    @media (min-width: 1440px) {
+      margin-left: 3rem;
+      margin-top: auto;
+    }
+  }
+
   .margin-description {
     @media (min-width: 1440px) {
       margin-left: 3rem;
       margin-top: auto;
     }
     @media (max-width: 1440px) {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
   .margin-principal {
     @media (max-width: 1440px) {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 `;
 
 const ProjectLink = styled(Link)`
   text-decoration: none;
-  color: #8b8b8b;
   display: flex;
   flex-direction: row;
   color: #8b8b8b;
+  width: fit-content;
+
+  @media (max-width: 1440px) {
+    margin-top: 1.8rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+  }
+
   @media (max-width: 768px) {
+    font-size: 1rem;
     margin-left: 0;
+    margin-top: 0rem;
+    /* padding: 0rem 0.7rem; */
+  }
+
+  .arrow {
+    margin-top: 2.2rem;
+    margin-left: 1rem;
+
+    @media (max-width: 1440px) {
+      /* font-size: 1rem; */
+      margin-top: 1.8rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      margin-top: 1.4rem;
+    }
   }
 
   .margin-description {
     @media (min-width: 1440px) {
       margin-left: 3rem;
+    }
+  }
+
+  .margin-no {
+    @media (min-width: 1440px) {
+      margin-left: 0rem;
     }
   }
 `;
@@ -189,7 +232,7 @@ function Home() {
 
       <ProjectContainer>
         <ProjectDescription>
-          <p className="weight margin-principal">Kino E - Streaming Platform</p>
+          <p className="weight ">Kino E - Streaming Platform</p>
           <p className="margin-principal">
             Discover the cinema you didn’t know you were looking for. At Kino E,
             we bring you a curated selection of unique films, independent gems,
@@ -198,8 +241,8 @@ function Home() {
           </p>
         </ProjectDescription>
         <ProjectLink to="/detail/kinoestreaming">
-          <p> Show more</p>
-          <HiArrowLongRight style={{ marginLeft: "1rem", marginTop: "2rem" }} />
+          <p className="margin-no"> Show more</p>
+          <HiArrowLongRight className="arrow" />
         </ProjectLink>
       </ProjectContainer>
 
@@ -209,7 +252,7 @@ function Home() {
         </BannerLink>
         <ProjectColumn>
           <ProjectDescription style={{ width: "auto" }}>
-            <p className="weight margin-description">The Poem Mind</p>
+            <p className="weight margin-other ">The Poem Mind</p>
             <p className="margin-description">
               The Poem Mind is a canvas where poetry flows freely — from
               timeless classics to contemporary voices, words find the reader.
@@ -217,9 +260,7 @@ function Home() {
           </ProjectDescription>
           <ProjectLink to="/detail/thepoemmind">
             <p className="margin-description"> Show more</p>
-            <HiArrowLongRight
-              style={{ marginLeft: "1rem", marginTop: "2rem" }}
-            />
+            <HiArrowLongRight className="arrow" />
           </ProjectLink>
         </ProjectColumn>
       </ProjectRow>
@@ -236,7 +277,7 @@ function Home() {
             className="margin-description"
             style={{ width: "auto" }}
           >
-            <p className="weight margin-description">Barry & Brothers</p>
+            <p className="weight margin-other">Barry & Brothers</p>
             <p className="margin-description">
               Barry & Brothers is a fashion eCommerce brand that blends elegance
               and tradition, <br /> inspired by the rich legacy of a historic
@@ -245,9 +286,7 @@ function Home() {
           </ProjectDescription>
           <ProjectLink to="/detail/barryandbrothers">
             <p className="margin-description"> Show more</p>
-            <HiArrowLongRight
-              style={{ marginLeft: "1rem", marginTop: "2rem" }}
-            />
+            <HiArrowLongRight className="arrow" />
           </ProjectLink>
         </ProjectColumn>
       </ProjectRow>

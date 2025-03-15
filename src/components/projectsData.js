@@ -54,7 +54,7 @@ With a seamless digital shopping experience and a commitment to lasting craftsma
   },
   {
     id: "kinoestreaming",
-    title: "Kino E - Streaming Platform",
+    title: "Kino E: A Journey Through Cinema",
     description: `Kino E is a streaming platform that celebrates the diversity of cinema, blending independent gems, cult classics, and handpicked commercial films that have left a cultural mark. Our mission is to curate films that matter — stories that move beyond trends and algorithms to offer a richer, more meaningful viewing experience.
 
 Every week, Kino E brings a new themed collection, connecting films through creative ideas, visual styles, or cultural relevance. Whether it’s bold experimental works, iconic blockbusters, or emerging voices from around the world, we believe great cinema comes in many forms — and all of them deserve a place here.

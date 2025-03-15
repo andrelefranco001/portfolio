@@ -35,14 +35,18 @@ const TextContainer = styled.div`
   margin-top: 10rem;
   width: 600px;
   font-weight: 200;
-  font-size: 1.5rem;
-  @media (max-width: 1440px) {
-    font-size: 1.3rem;
+  font-size: 1.7rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.7rem;
   }
   @media (max-width: 768px) {
+    font-size: 1.4rem;
     width: 100%;
     margin-top: 2rem;
-    font-size: 1.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
   }
 `;
 
