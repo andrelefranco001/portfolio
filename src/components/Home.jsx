@@ -128,6 +128,10 @@ const ProjectLink = styled(Link)`
   color: #8b8b8b;
   width: fit-content;
 
+  :hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: 1440px) {
     margin-top: 1.8rem;
     border-radius: 15px;

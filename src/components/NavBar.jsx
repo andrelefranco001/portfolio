@@ -15,39 +15,45 @@ const HighlightText = styled.div`
   flex-direction: row;
   justify-content: space-between;
   background: #e6e6e6;
+  color: ${(props) => (props.isScrolled ? "#6d6c6c" : "#242424")};
   top: 0;
   z-index: 1000;
   align-items: center;
-  font-size: ${(props) => (props.isScrolled ? "1.2rem" : "1.8rem")};
+  font-size: ${(props) => (props.isScrolled ? "1.5rem" : "2rem")};
   font-weight: 600;
   box-sizing: border-box;
   padding: ${(props) => (props.isScrolled ? "0.5rem 1rem" : "1rem 1rem")};
-  height: ${(props) => (props.isScrolled ? "50px" : "80px")};
-  transition: all 0.3s ease-in-out;
+  height: ${(props) => (props.isScrolled ? "55px" : "85px")};
+  transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  :hover {
+    color: ${(props) => (props.isScrolled ? "#242424" : "#6d6c6c")};
+  }
 
   @media (max-width: 1440px) {
-    font-size: ${(props) => (props.isScrolled ? "1rem" : "1.5rem")};
+    font-size: ${(props) => (props.isScrolled ? "1.5rem" : "2rem")};
+    /* color: ${(props) => (props.isScrolled ? "red" : "yellow")}; */
     padding: ${(props) =>
       props.isScrolled ? "0.4rem 0.8rem" : "0.8rem 0.8rem"};
-    height: ${(props) => (props.isScrolled ? "45px" : "70px")};
+    height: ${(props) => (props.isScrolled ? "55px" : "80px")};
   }
   @media (max-width: 1024px) {
-    font-size: ${(props) => (props.isScrolled ? "0.9rem" : "1.3rem")};
+    font-size: ${(props) => (props.isScrolled ? "1.5rem" : "2rem")};
     padding: ${(props) =>
       props.isScrolled ? "0.3rem 0.6rem" : "0.6rem 0.6rem"};
-    height: ${(props) => (props.isScrolled ? "40px" : "60px")};
+    height: ${(props) => (props.isScrolled ? "55px" : "80px")};
   }
   @media (max-width: 768px) {
-    font-size: ${(props) => (props.isScrolled ? "0.8rem" : "1.2rem")};
+    font-size: ${(props) => (props.isScrolled ? "1.3rem" : "1.5rem")};
     padding: ${(props) =>
       props.isScrolled ? "0.2rem 0.4rem" : "0.4rem 0.4rem"};
-    height: ${(props) => (props.isScrolled ? "35px" : "50px")};
+    height: ${(props) => (props.isScrolled ? "40px" : "55px")};
   }
   @media (max-width: 480px) {
-    font-size: ${(props) => (props.isScrolled ? "0.7rem" : "1rem")};
+    font-size: ${(props) => (props.isScrolled ? "1rem" : "1.3rem")};
     padding: ${(props) =>
       props.isScrolled ? "0.1rem 0.2rem" : "0.2rem 0.2rem"};
-    height: ${(props) => (props.isScrolled ? "30px" : "40px")};
+    height: ${(props) => (props.isScrolled ? "45px" : "55px")};
   }
 `;
 
@@ -68,13 +74,13 @@ function NavBar() {
       <HighlightText isScrolled={isScrolled}>
         <Link
           to="/portfolio/"
-          style={{ textDecoration: "none", color: "black" }}
+          style={{ textDecoration: "none", color: "inherit" }}
         >
-          <span style={{ backdropFilter: "blur(5px)" }}>Andres Velasquez</span>
+          <span>Andres Velasquez</span>
         </Link>
 
-        <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
-          <span style={{ backdropFilter: "blur(5px)" }}>About</span>
+        <Link to="/about" style={{ textDecoration: "none", color: "inherit" }}>
+          <span>About</span>
         </Link>
       </HighlightText>
     </NavBarContainer>
