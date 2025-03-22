@@ -362,12 +362,13 @@ Please change the parent <Route path="${G}"> to <Route path="${G==="/"?"*":`${G}
   font-size: 1.5rem;
   font-weight: 200;
   margin-top: 5rem;
-  text-align: justify;
+  text-align: left;
   width: 70%;
 
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 3rem;
+    font-size: 1rem;
   }
 `,Cd=Se.p`
   font-size: 3.5rem;
