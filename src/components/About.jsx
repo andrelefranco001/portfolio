@@ -86,12 +86,13 @@ const Paragraph = styled.p`
   font-size: 1.5rem;
   font-weight: 200;
   margin-top: 5rem;
-  text-align: justify;
+  text-align: left;
   width: 70%;
 
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 3rem;
+    font-size: 1rem;
   }
 `;
 
