@@ -19,26 +19,28 @@ const HighlightText = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 const Container = styled.div`
-  font-size: 1.7rem;
-  font-weight: 200;
+  font-size: 4rem;
 
   margin-top: 9rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 
+  p {
+    font-weight: 600;
+  }
   @media (max-width: 1024px) {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
 
     margin-top: 7rem;
     margin-bottom: 4rem;
   }
   @media (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
 
     margin-top: 5rem;
     margin-bottom: 3rem;
   }
   @media (max-width: 480px) {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 
     margin-top: 3rem;
     margin-bottom: 2rem;
